@@ -56,23 +56,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>$(SolutionDir)obj\cJSON$(ApplicationType)$(PlatformArchitecture)_$(Configuration)\</IntDir>
-    <TargetName>cJSON$(ApplicationType)$(PlatformArchitecture)_$(Configuration)</TargetName>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)$(PlatformArchitecture)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)$(PlatformArchitecture)_$(Configuration)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>$(SolutionDir)obj\cJSON$(ApplicationType)$(PlatformArchitecture)_$(Configuration)\</IntDir>
-    <TargetName>cJSON$(ApplicationType)$(PlatformArchitecture)_$(Configuration)</TargetName>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)$(PlatformArchitecture)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)$(PlatformArchitecture)_$(Configuration)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>$(SolutionDir)obj\cJSON$(ApplicationType)$(PlatformArchitecture)_$(Configuration)\</IntDir>
-    <TargetName>cJSON$(ApplicationType)$(PlatformArchitecture)_$(Configuration)</TargetName>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)$(PlatformArchitecture)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)$(PlatformArchitecture)_$(Configuration)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>$(SolutionDir)obj\cJSON$(ApplicationType)$(PlatformArchitecture)_$(Configuration)\</IntDir>
-    <TargetName>cJSON$(ApplicationType)$(PlatformArchitecture)_$(Configuration)</TargetName>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)$(PlatformArchitecture)_$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)$(PlatformArchitecture)_$(Configuration)</TargetName>
   </PropertyGroup>
   <ItemGroup>
     <ClCompile Include="cJSON.c" />
@@ -84,7 +84,7 @@
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <BuildLog>
-      <Path>$(SolutionDir)obj\cJSON$(ApplicationType)$(PlatformArchitecture)_$(Configuration).log</Path>
+      <Path>$(SolutionDir)obj\$(ProjectName)$(PlatformArchitecture)_$(Configuration).log</Path>
     </BuildLog>
     <ClCompile>
       <CppLanguageStandard>c++17</CppLanguageStandard>
@@ -97,7 +97,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <BuildLog>
-      <Path>$(SolutionDir)obj\cJSON$(ApplicationType)$(PlatformArchitecture)_$(Configuration).log</Path>
+      <Path>$(SolutionDir)obj\$(ProjectName)$(PlatformArchitecture)_$(Configuration).log</Path>
     </BuildLog>
     <ClCompile>
       <CppLanguageStandard>c++17</CppLanguageStandard>
@@ -110,7 +110,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <BuildLog>
-      <Path>$(SolutionDir)obj\cJSON$(ApplicationType)$(PlatformArchitecture)_$(Configuration).log</Path>
+      <Path>$(SolutionDir)obj\$(ProjectName)$(PlatformArchitecture)_$(Configuration).log</Path>
     </BuildLog>
     <ClCompile>
       <CppLanguageStandard>c++17</CppLanguageStandard>
@@ -123,7 +123,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
     <BuildLog>
-      <Path>$(SolutionDir)obj\cJSON$(ApplicationType)$(PlatformArchitecture)_$(Configuration).log</Path>
+      <Path>$(SolutionDir)obj\$(ProjectName)$(PlatformArchitecture)_$(Configuration).log</Path>
     </BuildLog>
     <ClCompile>
       <CppLanguageStandard>c++17</CppLanguageStandard>
