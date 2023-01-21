@@ -85,6 +85,10 @@ then using the CJSON_API_VISIBILITY flag to "export" the same symbols the way CJ
 
 #include <stddef.h>
 
+#if defined(__STDC_VERSION__) && __STDC_VERSION__ >= 199901L && !defined(CJSON_DISABLE_INT64)
+#define CJSON_USE_INT64
+#endif
+
 /* cJSON Types: */
 #define cJSON_Invalid (0)
 #define cJSON_False  (1 << 0)
@@ -114,7 +118,11 @@ typedef struct cJSON
     /* The item's string, if type==cJSON_String  and type == cJSON_Raw */
     char *valuestring;
     /* writing to valueint is DEPRECATED, use cJSON_SetNumberValue instead */
+#if defined(CJSON_USE_INT64)
+    long long valueint;
+#else
     int valueint;
+#endif
     /* The item's number, if type==cJSON_Number */
     double valuedouble;
 
