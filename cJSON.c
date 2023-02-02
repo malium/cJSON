@@ -88,7 +88,7 @@
 #define CJSON_INTMIN LLONG_MIN
 #define CJSON_INTPRI PRId64
 #else
-#define INTTYPE int
+#define CJSON_INTTYPE int
 #define CJSON_INTMAX INT_MAX
 #define CJSON_INTMIN INT_MIN
 #define CJSON_INTPRI PRId32
