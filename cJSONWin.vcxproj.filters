@@ -15,18 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="cJSON\cJSON.c">
+    <ClCompile Include="cJSON.c">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="cJSON\cJSON_Utils.c">
+    <ClCompile Include="cJSON_Utils.c">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cJSON\cJSON.h">
+    <ClInclude Include="cJSON.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="cJSON\cJSON_Utils.h">
+    <ClInclude Include="cJSON_Utils.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
